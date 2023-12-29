@@ -4,13 +4,9 @@ import {Calculator} from '../logic/calculator';
 
 const routes: Router = express.Router();
 
-// Index Routes
-
 routes.get('/', (req: Request, res: Response) => {
-    res.send('Hello world');
+    res.send('Hello Emerald Stay');
 });
-
-// Calculator Route
 
 routes.post('/calculate', async (req: Request, res: Response) => {
     try {
