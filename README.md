@@ -21,19 +21,16 @@ This is how the logic was calculated:
 Annual Income = (Monthly Rent * 12) - Annual rental fees
 
 Agency Fees Year 1 = Annual Income * 30%
-
 Agency Fees Year 2 = Annual Income * 25%
-
 Agency Fees Year 3 = Annual Income * 20%
 
 ROI Y1= ((Annual Income - Agency Fees Year 1) / Purchase Price) * 100
-
 ROI Y2= ((Annual Income - Agency Fees Year 2) / Purchase Price) * 100
-
 ROI Y3= ((Annual Income - Agency Fees Year 3) / Purchase Price) * 100
 
 Overall ROI = (((Annual Income - Agency Fees Year 1) + (Annual Income - Agency Fees Year 2) + (Annual Income - Agency Fees Year 3)) / Purchase Price ) * 100
 ```
+The calculator can be found in its own folder called "logic".
 
 ## How to get started with the backend 🚩
 
@@ -65,6 +62,10 @@ Clone the client repo [here](https://github.com/IliaZolas/emerald-client).
 
 This project was managed using [Linear](https://linear.app/) and was synced with Github for automated issue and pull request tracking.
 
+## Hosting
+
+This application is hosted on [Railway.app](https://railway.app/), one of my favourite hosting providers. Both client and server repos are hosted seperately from each other.
+
 ## Conclusion 👨‍🚀
 
 I enjoyed building this project and have some thoughts on how it could be more practical
@@ -72,6 +73,7 @@ I enjoyed building this project and have some thoughts on how it could be more p
 - User should be able to input a desired time period
 - Error margin could be considered regarding fluctuation in market
 - Deeper sanitisation could be implemented
+- Refactoring of calculator logic
 
 Thank you for your time. If you are satisfied with this application, please get in touch!
 
