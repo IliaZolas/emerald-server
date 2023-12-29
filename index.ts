@@ -10,7 +10,7 @@ const PORT: number = process.env.PORT ? parseInt(process.env.PORT) : 4000;
 
 
 const corsOptions: CorsOptions = {
-  origin: ['http://localhost:4200'],
+  origin: ['https://emerald-client-production.up.railway.app','http://localhost:4200'],
   credentials: true,
   allowedHeaders: ['Origin', 'Content-Type', 'Authorization', 'x-csrf-token', 'Accept'],
   exposedHeaders: ['Authorization' ] 
