@@ -1,7 +1,18 @@
 export async function Calculator (req: any, res: any){
-    const purchasePrice = req.body.purchasePrice;
-    const monthlyRent = req.body.monthlyRent;
-    const annualRentalFee = req.body.annualRentalFee;
+    const purchasePrice = parseFloat(req.body.purchasePrice);
+    const monthlyRent = parseFloat(req.body.monthlyRent);
+    const annualRentalFee = parseFloat(req.body.annualRentalFee);
+
+    if (
+        isNaN(purchasePrice) ||
+        isNaN(monthlyRent) ||
+        isNaN(annualRentalFee) ||
+        purchasePrice <= 0 ||
+        monthlyRent <= 0 ||
+        annualRentalFee < 0
+    ) {
+        return res.status(400).json({ error: 'Invalid input. Please enter valid numeric values.' });
+    }
 
     const annualRent = monthlyRent * 12;
     const annualIncome = annualRent - annualRentalFee;
