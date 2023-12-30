@@ -18,17 +18,17 @@ This is how the logic was calculated:
 
 
 ```
-Annual Income = (Monthly Rent * 12) - Annual rental fees
+Annual Rent = Monthly Rent * 12
+Annual Income = Annual Rent - Annual rental fees
 
 Agency Fees Year 1 = Annual Income * 30%
 Agency Fees Year 2 = Annual Income * 25%
 Agency Fees Year 3 = Annual Income * 20%
 
-ROI Y1= ((Annual Income - Agency Fees Year 1) / Purchase Price) * 100
-ROI Y2= ((Annual Income - Agency Fees Year 2) / Purchase Price) * 100
-ROI Y3= ((Annual Income - Agency Fees Year 3) / Purchase Price) * 100
-
 Overall ROI = (((Annual Income - Agency Fees Year 1) + (Annual Income - Agency Fees Year 2) + (Annual Income - Agency Fees Year 3)) / Purchase Price ) * 100
+
+# ROI output is a percentage rounded to 2 decimal points
+
 ```
 The calculator can be found in its own folder called "logic".
 
